@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guilda WoW - Carrossel</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="guild-name">
+        <h1>Guilda WoW</h1>
+        <!-- Nome da guilda -->
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Cadastro</a></li>
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Informações</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="slide-container">
+      <div class="carousel-wrapper">
+        <button class="arrow left" onclick="moverSlide(-1)">&#8592;</button>
+        <div id="carousel" class="carousel">
+          <!-- Clone invisível - Última imagem no início -->
+          <img src="./assets/Xal'Atath.jpg" alt="Slide 3" class="clone" /> />
+          <img src="./assets/Xal'Atath2.jpg" alt="Slide 1" />
+          <img src="./assets/Xal'Atath3.jpg" alt="Slide 2" />
+          <!-- Foto invisivel -->
+          <img src="./assets/Xal'Atath.jpg" alt="Slide 3" class="clone" /> />
+        </div>
+        <button class="arrow right" onclick="moverSlide(1)">&#8594;</button>
+      </div>
+    </section>
+
+    <!-- Seção de Eventos -->
+    <section class="eventos">
+      <h2>Eventos da Guilda</h2>
+      <form id="event-form">
+        <label for="nome-evento">Nome do Evento:</label>
+        <input type="text" id="nome-evento" required />
+        <label for="data-evento">Data do Evento:</label>
+        <input type="date" id="data-evento" required />
+        <button type="submit">Criar Evento</button>
+      </form>
+
+      <h3>Inscrição para Eventos</h3>
+      <div id="eventos-lista">
+        <!-- Lista de eventos criados -->
+      </div>
+      <div id="inscricao-container">
+        <label for="evento-inscricao"
+          >Escolha um Evento para se Inscrever:</label
+        >
+        <select id="evento-inscricao">
+          <!-- Eventos serão listados aqui -->
+        </select>
+        <button id="inscrever-btn">Inscrever-se</button>
+      </div>
+    </section>
+
+    <script src="./script/script.js"></script>
+  </body>
+</html>
