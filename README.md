@@ -43,7 +43,9 @@ Este é um projeto de página web criado especialmente para guildas de **World o
 
 ## 📸 Pré-visualização
 
-![Preview](https://via.placeholder.com/1200x600?text=Preview+da+Guilda)
+Ainda nao disponível :/
+
+<!-- ![Preview](https://via.placeholder.com/1200x600?text=Preview+da+Guilda) -->
 
 ---
 
